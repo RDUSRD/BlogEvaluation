@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <title>Blog - Crear Post</title>
+  </head>
+  <body>
+    <header class="mb-4">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BLOG</a>
+        <span id="welcomeMessage" class="navbar-text"></span>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="createPost.html">Crear Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="editProfile.html">Perfil</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="logout()">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <h2>Crear Post</h2>
+          <form id="createPostForm">
+            <div class="form-group">
+              <label for="postTitle">Título:</label>
+              <input
+                type="text"
+                id="postTitle"
+                name="postTitle"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="postDescription">Descripción:</label>
+              <textarea
+                id="postDescription"
+                name="postDescription"
+                class="form-control"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="postImage">URL de la Imagen:</label>
+              <input
+                type="text"
+                id="postImage"
+                name="postImage"
+                class="form-control"
+                required
+              />
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="createPost()"
+            >
+              Crear Post
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+     <!-- Agregamos la variable de entorno sencilla -->
+     <script src="./config.js"></script>
+  </body>
+</html>

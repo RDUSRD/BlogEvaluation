@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6; /* color de fondo suave */
+}
+
+header {
+    background-color: #f8f9fa; /* color de fondo suave */
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    color: #343a40; /* color de texto oscuro */
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #343a40; /* color de texto oscuro */
+    text-decoration: none;
+}
+
+
+
+.home-container {
+    padding: 40px;
+    background-color: #f8f9fa; /* color de fondo suave */
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #e9ecef; /* color de fondo suave */
+}
+
+/* Para dar a cada sección un color de fondo diferente */
+section:nth-child(even) {
+    background-color: #dee2e6; /* color de fondo suave */
+}
+
+/* Ajusta el tamaño de la imagen */
+.post-image {
+    width: 100%;
+}
+
+/* Organiza las tarjetas de myPosts */
+#myPosts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Define el tamaño de las tarjetas */
+#myPosts .card {
+    flex: 0 0 calc(33.3333% - 20px);
+    margin: 10px;
+}
+
+#myPosts .buttonsclass{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* Organizando botones */
+#myPosts .card .card-body .btn {
+    margin: 5px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* Organiza las tarjetas en filas */
+#generalPosts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Define el tamaño de las tarjetas */
+#generalPosts .card {
+    flex: 0 0 calc(33.3333% - 20px);
+    margin: 10px;
+}
+
+/* Organiza las tarjetas en filas */
+#searchResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Define el tamaño de las tarjetas */
+#searchResults .card {
+    flex: 0 0 calc(33.3333% - 20px);
+    margin: 10px;
+}
+
+.navbar-text#welcomeMessage {
+    font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
+    color: #000000; /* Cambia el color del texto */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    margin-inline: 15px; /* Añade un margen horizontal */
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #6c757d;
+}

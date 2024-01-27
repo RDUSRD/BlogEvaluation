@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/sign.css">
+    <title>Blog - Registrarse</title>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>BLOG</h1>
+        <h2>Registrarse</h2>
+        <form id="signupForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="signupUsername" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="signupPassword" name="password" required>
+
+            <label for="confirmPassword">Confirmar Contraseña:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="button" onclick="signup()">Registrarse</button>
+        </form>
+
+        <p>¿Ya tienes una cuenta? <a href="index.html">Inicia Sesión</a></p>
+    </div>
+
+    <script src="/Frontend/assets/js/sign.js"></script>
+     <!-- Agregamos la variable de entorno sencilla -->
+     <script src="./config.js"></script>
+</body>
+</html>
